@@ -5,12 +5,15 @@ import { ProductComponent } from './components/product/product.component';
 import { CategoryComponent } from './components/category/category.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ProductComponent, CategoryComponent, NaviComponent, HttpClientModule],
+  imports: [ CommonModule, RouterOutlet, ProductComponent, CategoryComponent, NaviComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
